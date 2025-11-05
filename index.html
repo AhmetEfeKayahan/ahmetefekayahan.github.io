@@ -1,34 +1,108 @@
-
 <!DOCTYPE html>
 <html lang="tr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ahmet Efe Kayahan | Kalem Uygulaması</title>
+  <title>Ahmet Efe Kayahan | Projelerim</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f7f7f7;
+      margin: 0;
+      font-family: "Segoe UI", sans-serif;
+      background-color: #0d1117;
+      color: #c9d1d9;
       text-align: center;
+    }
+    header {
+      background-color: #161b22;
+      padding: 20px 0;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+    }
+    h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+    p {
+      color: #8b949e;
+      font-size: 1.1em;
+    }
+    .projects {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
       padding: 40px;
+      gap: 20px;
     }
-    h1 { color: #333; }
-    p { color: #555; }
+    .card {
+      background-color: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 10px;
+      width: 300px;
+      padding: 20px;
+      text-align: left;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+    }
+    .card h2 {
+      color: #58a6ff;
+      margin-top: 0;
+    }
+    .card p {
+      color: #8b949e;
+    }
     a {
-      display: inline-block;
-      background: #0078d7;
-      color: white;
-      padding: 10px 20px;
+      color: #58a6ff;
       text-decoration: none;
-      border-radius: 8px;
-      margin-top: 20px;
     }
-    a:hover { background: #005fa3; }
+    a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      padding: 20px;
+      border-top: 1px solid #30363d;
+      color: #8b949e;
+      margin-top: 40px;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 14px;
+      background-color: #238636;
+      color: white;
+      border-radius: 6px;
+      text-decoration: none;
+    }
+    .btn:hover {
+      background-color: #2ea043;
+    }
   </style>
 </head>
 <body>
-  <h1>👋 Merhaba, ben Ahmet Efe Kayahan</h1>
-  <p>Bu benim GitHub üzerinden oluşturduğum kişisel web sitemdir.</p>
-  <a href="https://github.com/AhmetEfeKayahan/kalem-uygulamasi-Pen-Application">📂 Kalem Uygulaması (Pen Application)</a>
+  <header>
+    <h1>👋 Merhaba, ben Ahmet Efe Kayahan</h1>
+    <p>Python ve teknoloji tutkunu bir geliştiriciyim.</p>
+  </header>
+
+  <section class="projects">
+    <div class="card">
+      <h2>✏️ Kalem Uygulaması (Pen Application)</h2>
+      <p>Python tabanlı bir çizim uygulamasıdır. Basit, hızlı ve kullanışlı bir arayüz sunar.</p>
+      <a class="btn" href="https://github.com/AhmetEfeKayahan/kalem-uygulamasi-Pen-Application">Projeyi Gör</a>
+    </div>
+
+    <!-- Yeni projeler eklemek istersen buraya benzer kartlar ekleyebilirsin -->
+  </section>
+
+  <footer>
+    <p>
+      🌐 <a href="https://github.com/AhmetEfeKayahan">GitHub</a> |
+      🎥 <a href="https://www.youtube.com/@MisterMH">YouTube: Mister MH</a>
+    </p>
+    <p>© 2025 Ahmet Efe Kayahan. Tüm hakları saklıdır.</p>
+  </footer>
 </body>
 </html>
+
+
